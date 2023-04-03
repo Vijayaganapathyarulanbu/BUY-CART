@@ -37,9 +37,13 @@ Route::get('/success', function () {
 
 
 
-  
+
 Route::get('/dash', function () {
     return view('dash.dashboard');
+});
+
+Route::get('/confirm', function () {
+    return view('confirm');
 });
 
 
