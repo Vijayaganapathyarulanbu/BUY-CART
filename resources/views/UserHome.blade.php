@@ -65,7 +65,7 @@
                       </div>
                       <div class="form-group">
                         <label for="phone">Phone Number:</label>
-                        <input type="tel" class="form-control" id="cust_phone" name="cust_phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                        <input type="tel" class="form-control" id="cust_phone" name="cust_phone"  pattern="[0-9]+" placeholder="Please enter only numbers" required>
                       </div>
                       <div class="form-group">
                         <label for="email">Email:</label>
