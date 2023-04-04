@@ -40,7 +40,7 @@
 	</style>
 </head>
 <body>
-    <div style="margin-top:-20%;">
+    <div style="margin-top:%;">
 	<div class="container">
 		<h1>Registration Successful</h1>
 		<p>Thank you for registering.</p>
