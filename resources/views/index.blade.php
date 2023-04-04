@@ -126,7 +126,7 @@ button:hover {
             <a class="nav-link mr-5 button" href="{{ url('/login') }}" style="color:white">LOGIN</a>
         </li>
       <li class="nav-item">
-        <a class="nav-link mr-5 button" href="{{ url('/dash') }}" style="color:white">ADMIN</a>
+        <a class="nav-link mr-5 button" href="{{ url('/admin') }}" style="color:white">ADMIN</a>
       </li>
        </ul>
                 </div>
@@ -136,18 +136,17 @@ button:hover {
 
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- carousel code goes here -->
+       
 
             <div id="demo" class="carousel slide container-fluid" data-ride="carousel" style="width:100%;">
 
-                <!-- Indicators -->
+           
                 <ul class="carousel-indicators">
                     <li data-target="#demo" style="background-color:black;" data-slide-to="0" class="active"></li>
                     <li data-target="#demo"="background-color:black;" data-slide-to="1"></li>
                     <li data-target="#demo" style="background-color:black;" data-slide-to="2"></li>
                 </ul>
 
-                <!-- The slideshow -->
                 <div class="container-fluid">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -162,7 +161,7 @@ button:hover {
 
                     </div>
                 </div>
-                <!-- Left and right controls -->
+          
 
                 <a class="carousel-control-prev" href="#demo" data-slide="prev">
                     <span class="carousel-control-prev-icon" style="background-color:black;"></span>

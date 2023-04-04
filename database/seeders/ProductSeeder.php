@@ -21,7 +21,7 @@ class ProductSeeder extends Seeder
             [
                 'name' => 'MilkShake',
                 'description' => 'Vanilla Milkshake',
-                'image' => 'assets/images/' . $item['Venilla_PNG-1.png'],
+             
                 'category' => 'Food & Beverage',
                 'price' => 'RS:199',
                 'created_at' => now(),

@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\admincontroller;
 use App\Http\Controllers\loginauthcontroller;
 use App\Http\Controllers\ordercontroller;
 use App\Http\Controllers\productController;
@@ -26,8 +27,7 @@ Route::get('/login', [loginauthcontroller::class,'login']);
 Route::get('/register', [loginauthcontroller::class,'register']);
 Route::post('/register-user',[loginauthcontroller::class,'registerUser'])->name('register-user');
 Route::post('/login-user',[loginauthcontroller::class,'loginUser'])->name('login-user');
-
-
+Route::post('/log', [admincontroller::class, 'admin'])->name('logo');
 Route::get('/success', function () {
     return view('auth.registration-success');
 });
@@ -43,7 +43,7 @@ Route::get('/confirm', function () {
 
 
 Route::get('/admin', function () {
-    return view('auth.admin');
+    return view('adminform');
 });
 
 
@@ -67,5 +67,5 @@ Route::get('edit/{id}', [productController::class, 'edit']);
 Route::put('update/{id}',[productController::class, 'updates'])->name('update');
 Route::get('orderform/{id}', [ordercontroller::class, 'orderform']);
 Route::post('/order', [ordercontroller::class, 'store'])->name('order');
-Route::get('orders.order', [ordercontroller::class, 'order']);
+Route::get('orders.order', [ordercontroller::class, 'order']);       
 Route::get('/dash', [productController::class, 'procount']);

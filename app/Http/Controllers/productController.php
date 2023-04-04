@@ -40,7 +40,8 @@ class productController extends Controller
         $product=product::count();
         $order=order::count();
         $user=User::count();
-        return view ('dash.dashboard', ['product'=>$product, 'order' => $order, 'User' => $user]);
+        $admin=\App\Models\admin::count();
+        return view ('dash.dashboard', ['product'=>$product, 'order' => $order, 'User' => $user, 'admin' => $admin]);
      }
 
 

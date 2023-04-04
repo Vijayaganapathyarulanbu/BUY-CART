@@ -109,5 +109,6 @@ input[type="text"]{
  <h1>product:{{$product}}</h1>
  <h1>order:{{$order}}</h1>
  <h1>User:{{$User}}</h1>
+ <h1>admin:{{$admin}}</h1>
 </body>
 </html>
