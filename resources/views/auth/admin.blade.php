@@ -47,12 +47,12 @@
 			font-weight: bold;
 			text-transform: uppercase;
 			margin-top: 20px;
-			background-color: #0056b3;
-			border-color: #0056b3;
+			background-color: #aac5e2;
+			border-color: #ceddec;
 		}
 		.btn:hover {
-			background-color: #004080;
-			border-color: #004080;
+			background-color: #a7c7e7;
+			border-color: #d7dee6;
 		}
 
 
@@ -74,7 +74,8 @@
                                 <label for="password">Password</label>
                                 <input type="password" class="form-control" id="password" placeholder="Enter password">
                             </div>
-                            <button type="submit" class="btn">Login</button>
+                            <a href="{{'dash'}}"><button class="btn">LOGIN</a></button>
+
                         </form>
                     </div>
                 </div>

@@ -23,7 +23,7 @@ class ordercontroller extends Controller
     $order->product_name = $request->product_name;
     $order->product_price = $request->product_price;
     $order->save();
-    // Redirect to success page
+    
     return redirect('confirm');
 }
 
