@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 use App\Models\product;
 use Illuminate\Http\Request;
-
-
-
+use App\Models\order;
+use App\Models\User;
 
 class productController extends Controller
 {
@@ -36,12 +35,20 @@ class productController extends Controller
 
     }
    
+     
+    function procount(){
+        $product=product::count();
+        $order=order::count();
+        $user=User::count();
+        return view ('dash.dashboard', ['product'=>$product, 'order' => $order, 'User' => $user]);
+     }
+
 
     function userbooking(){
         $data2=product::all();
-        {
+       
             return view ('index', ['product'=>$data2]);
-        }
+       
      }
     
      function pro() {

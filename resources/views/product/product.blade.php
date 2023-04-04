@@ -74,25 +74,7 @@ body{
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <title>Document</title>
-  <style>
-     label{
-        margin-left:4px;
-        display: flex;
-    }
-    input[type="submit"]{
-      display: flex;
-      margin-top: 20px;
-    }
-    input[type="text"]{
 
-        display: flex;
-        border-radius: 10px;
-        width: 700px;
-        border: 1px solid black;
-        padding: 10px;
-    }
-
-  </style>
 </head>
 <body>
 <div class="main">
@@ -102,8 +84,8 @@ body{
          <a href="{{ url('orders.order') }}">User Orders</a>
          <a href="{{ url('/product.product') }}">Product List</a>
          <a href="{{ url('/product.proform') }}">add Product</a>
-
 </nav>
+
 <form style="font-family:'Times New Roman';" method="post">
 <div class="container"><br><br>
 <table class="table table-hover table-dark table-striped" style="text-transform:uppercase;">

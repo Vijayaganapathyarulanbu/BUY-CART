@@ -4,8 +4,6 @@
 use App\Http\Controllers\loginauthcontroller;
 use App\Http\Controllers\ordercontroller;
 use App\Http\Controllers\productController;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
@@ -38,9 +36,6 @@ Route::get('/success', function () {
 
 
 
-Route::get('/dash', function () {
-    return view('dash.dashboard');
-});
 
 Route::get('/confirm', function () {
     return view('confirm');
@@ -69,3 +64,4 @@ Route::put('update/{id}',[productController::class, 'updates'])->name('update');
 Route::get('orderform/{id}', [ordercontroller::class, 'orderform']);
 Route::post('/order', [ordercontroller::class, 'store'])->name('order');
 Route::get('orders.order', [ordercontroller::class, 'order']);
+Route::get('/dash', [productController::class, 'procount']);

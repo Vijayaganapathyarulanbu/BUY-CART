@@ -104,9 +104,10 @@ input[type="text"]{
 		<a href="{{ url('orders.order') }}">User Orders</a>
 		<a href="{{ url('/product.product') }}">Product List</a>
 		<a href="{{ url('/product.proform') }}">add Product</a>
-
      </div>
 	</div>
-
+ <h1>product:{{$product}}</h1>
+ <h1>order:{{$order}}</h1>
+ <h1>User:{{$User}}</h1>
 </body>
 </html>
