@@ -15,7 +15,7 @@ class ordercontroller extends Controller
     }
    public function store(Request $request)
 {
-    
+
     $order = new Order();
     $order->cust_name = $request->cust_name;
     $order->cust_addr = $request->cust_addr;
@@ -24,7 +24,7 @@ class ordercontroller extends Controller
     $order->product_price = $request->product_price;
     $order->save();
     // Redirect to success page
-    return redirect('use');
+    return redirect('confirm');
 }
 
 function order() {
@@ -49,17 +49,17 @@ function order() {
         // Redirect to login page if user is not logged in
         return redirect()->route('login');
     }
-    
+
     // Validate input data
     $validatedData = $request->validate([
         'product_id' => 'required|exists:products,id',
         'customer_name' => 'required|max:255',
         'customer_num' => 'required|numeric',
     ]);
-    
+
     // Get product details
     $product = Product::find($validatedData['product_id']);
-    
+
 
 
 

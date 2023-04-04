@@ -15,19 +15,19 @@ class ProductSeeder extends Seeder
     public function run()
 
     {
-           $imagePath = Storage::disk('public')->putFile('products', storage_path('app/public/images/Venilla_PNG-1.png'));
+
 
         DB::table('products')->insert([
             [
-
                 'name' => 'MilkShake',
-                'description' => 'Venilla MilkShake',
-                'image' => $imagePath,
+                'description' => 'Vanilla Milkshake',
+                'image' => asset('storage/assets/images/' . $item['Venilla_PNG-1.png']),
                 'category' => 'Food & Beverage',
                 'price' => 'RS:199',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+
             [
                 'name' => 'Spinz',
                 'description' => 'Spinz-BB-Creme-NEW-Tub',

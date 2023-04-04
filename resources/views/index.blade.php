@@ -346,7 +346,8 @@ span.psw {
         @foreach($product as $item)
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="{{ asset('assets/images/'.$item['image']) }}" alt="{{ $item['name'] }}" style="width:100%; height:220px;">
+                    <img class="card-img-top" src="{{ asset('storage/assets/images/'.$item['image']) }}"
+                    alt="{{ $item['name'] }}" style="width:100%; height:220px;">
                     <div class="card-body">
                         <h1 class="card-title">{{$item['name']}}</h1>
                         <h3>Price : {{$item['price']}}</h3>

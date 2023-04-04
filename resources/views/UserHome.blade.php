@@ -55,11 +55,11 @@
 
                     <div class="form-group">
                         <label for="name">Customer Name:</label>
-                        <input type="text" class="form-control" id="customer_name" name="customer_name" placeholder="Enter your name" required>
+                        <input type="text" class="form-control" id="customer_name" name="cust_name" placeholder="Enter your name" required>
                       </div>
                       <div class="form-group">
                         <label for="address">Address:</label>
-                        <textarea class="form-control" id="customer_Addr" name="customer_Addr" rows="3" placeholder="Enter your address" required></textarea>
+                        <textarea class="form-control" id="customer_Addr" name="cust_addr" rows="3" placeholder="Enter your address" required></textarea>
                       </div>
                       <div class="form-group">
                         <label for="phone">Phone Number:</label>
@@ -71,7 +71,7 @@
                       </div>
                       <input type="hidden" name="product_name" value="{{ $product->name }}">
                       <input type="hidden" name="product_price" value="{{ $product->price }}">
-                      <button type="submit" onclick="{{ url('dash') }}" class="btn btn-primary btn-block">Place Order</button>
+                      <button type="submit"  class="btn btn-primary btn-block">Place Order</button>
                     </form>
                   </div>
                 </div>
