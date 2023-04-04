@@ -102,6 +102,9 @@ body{
          <a href="{{ url('orders.order') }}">User Orders</a>
          <a href="{{ url('/product.product') }}">Product List</a>
          <a href="{{ url('/product.proform') }}">add Product</a>
+         <br><br><br>
+        <img src="https://cavinkare.com/img/2017/03/logo.png" >
+
 
 </nav>
 <form style="font-family:'Times New Roman';" method="post">

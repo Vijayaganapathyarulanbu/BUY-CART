@@ -104,8 +104,8 @@ input[type="text"]{
 		<a href="{{ url('orders.order') }}">User Orders</a>
 		<a href="{{ url('/product.product') }}">Product List</a>
 		<a href="{{ url('/product.proform') }}">add Product</a>
-
-        <img src="https://cavinkare.com/img/2017/01/banner-768x307.png" >
+<br><br><br>
+        <img src="https://cavinkare.com/img/2017/03/logo.png" >
 
      </div>
 	</div>
