@@ -42,6 +42,10 @@ Route::get('/confirm', function () {
 });
 
 
+Route::get('/admin', function () {
+    return view('auth.admin');
+});
+
 
 
 

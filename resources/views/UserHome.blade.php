@@ -49,11 +49,11 @@
                 @csrf
                 <div class="item">
                     <img src="https://cavinkare.com/img/bfi_thumb/ebd5e4dc-b4d0-4852-9253-180e873b147e-large-w2z8x4m2864rtu0yzmmadc.jpg" width="90%">
-<h2>{{ $product->name }}</h2>
 
-                    <h3>Price : {{ $product->name }}</h3>
-                    <h4>Details: {{ $product->name }}</h4>
-                    <h4>category: {{ $product->price }}</h4>
+
+                    <h3>Name : {{ $product->name }}</h3>
+                    <h4>Description: {{ $product->description }}</h4>
+                    <h4>price: {{ $product->price }}</h4>
 
                     <div class="form-group">
                         <label for="name">Customer Name:</label>
@@ -65,7 +65,7 @@
                       </div>
                       <div class="form-group">
                         <label for="phone">Phone Number:</label>
-                        <input type="tel" class="form-control" id="cust_phone" name="cust_phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                        <input type="tel" class="form-control" id="cust_phone" name="cust_phone"  pattern="[0-9]+" placeholder="Please enter only numbers" required>
                       </div>
                       <div class="form-group">
                         <label for="email">Email:</label>
