@@ -76,7 +76,7 @@
         border-radius: 5px;
         padding: 5px;
       }
-      
+
 
 button {
   background-color: #04AA6D;
@@ -111,7 +111,7 @@ button:hover {
 
         button:hover {
             opacity: 0.8;
-        } 
+        }
     </style>
 </head>
 <body>
@@ -136,11 +136,11 @@ button:hover {
 
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-       
+
 
             <div id="demo" class="carousel slide container-fluid" data-ride="carousel" style="width:100%;">
 
-           
+
                 <ul class="carousel-indicators">
                     <li data-target="#demo" style="background-color:black;" data-slide-to="0" class="active"></li>
                     <li data-target="#demo"="background-color:black;" data-slide-to="1"></li>
@@ -161,7 +161,7 @@ button:hover {
 
                     </div>
                 </div>
-          
+
 
                 <a class="carousel-control-prev" href="#demo" data-slide="prev">
                     <span class="carousel-control-prev-icon" style="background-color:black;"></span>
@@ -193,7 +193,7 @@ button:hover {
             @endforeach
         </div>
     </div>
-  
+
 
     <footer style="background-color:rgb(190, 222, 252); color:white; height:30px;  text-align:center; ">
         CopyRights @ 2023 Buy cart
