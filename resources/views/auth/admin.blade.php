@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Admin Login</title>
-	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{{ asset('style.css') }}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-jB0CYR+mN4uuk6vGewEhKP8SzXunLsN0km6vDmW8J8voOEEU6mQ2z0yytTDNq3zEJN2Xh0R5um5D5ybbHr35pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- Custom CSS -->
+
 	<style>
 		body {
 			background-color: #f5f5f5;
@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <!-- Bootstrap JavaScript -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-9zVWUhA8NvWv2Zn43jqy/5vZaO0t0xpjq9JZM9vyPTNgD6SiuL6IITJyGQJ6EJG6SP7k6Vg9q4RXn7V+08HvRQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha512-2F+/lUQ4O9ivZCjYOsYm7EWEvS5vj+7yf5Ggjj30eVvPCpq71XiehuxJp8oGgKjvY2rHr3l3qg8Wd7bFtMN0Xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-EsNzTxlGcKVE1W/fzoFvRkk9XEBuHm9rBl7o++Mx14Jt7RLuULr3lKli8pxa5Q2qb5eYzto9K0b8FZgnpiRP1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
