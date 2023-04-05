@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -14,87 +15,79 @@
 	font-family: 'Poppins',sans-serif;
 }
 body{
-
-	background-size: cover;
+    background-size: cover;
 }
 .main{
-	width: 100%;
-	display: flex;
-	text-align: center;
+width: 100%;
+display: flex;
+text-align: center;
 }
 .menu{
-	width: 20%;
-	height: 100vh;
-	background-color: #121227;
+width: 20%;
+height: 100vh;
+background-color: #121227;
 }
 #logo{
-	color: #fff;
-	font-size: 30px;
-	letter-spacing: 4px;
-	background-color: #000;
-	padding: 15px;
+color: #fff;
+font-size: 30px;
+letter-spacing: 4px;
+background-color: #000;
+padding: 15px;
 }
 .menu a{
-	text-decoration: none;
-	color: #fff;
-	font-size: 10px;
-	letter-spacing: 2px;
-	display: list-item;
-	padding: 20px;
-	border-top: 1px solid black;
-	border-bottom:1px solid black;
-	text-transform: uppercase;
+text-decoration: none;
+color: #fff;
+font-size: 10px;
+letter-spacing: 2px;
+display: list-item;
+padding: 20px;
+border-top: 1px solid black;
+border-bottom:1px solid black;
+text-transform: uppercase;
 }
 .menu a:hover{
-	background-color: red;
-	color: #fff;
-	transition: 0.6s ease;
-	letter-spacing: 4px;
-	text-transform: uppercase;
+background-color: red;
+color: #fff;
+transition: 0.6s ease;
+letter-spacing: 4px;
+text-transform: uppercase;
 }
 
-.body h1{
-	margin-top: 250px;
-	color: #fff;
-	letter-spacing: 4px;
-	padding: 20px;
-	background-color: #000;
-}
-.body p{
-	color: white;
-	background-color: red;
-	font-family: 'Poppins',sans-serif;
-}
-label{
-	margin-left:4px;
-	display: flex;
-}
-input[type="submit"]{
-  display: flex;
-  margin-top: 20px;
-}
-input[type="text"]{
-
-	display: flex;
-	border-radius: 10px;
-	width: 700px;
-	border: 1px solid black;
-	padding: 10px;
-
-}
 .container{
-  display: inline-block;
-  padding-left: 100px;
-  margin-top: 50px;
-  margin-left: 20px;
-  height: 600px;
-  font-size: 15px;
-  width: 900px;
-  border: 1px solid black;
-  justify-content: center;
+margin-top: 50px;
+margin-left: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
+
+.card{
+width: 300px;
+height: 200px;
+margin: 20px;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: white;
+}
+
+.card h1{
+text-align: center;
+font-size: 30px;
+margin-bottom: 20px;
+}
+
+.card p{
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+}
+
 </style>
-	<title>AdminDashbord</title>
+	<title>AdminDashboard</title>
 </head>
 <body>
 	<div class="main">
@@ -104,11 +97,30 @@ input[type="text"]{
 		<a href="{{ url('orders.order') }}">User Orders</a>
 		<a href="{{ url('/product.product') }}">Product List</a>
 		<a href="{{ url('/product.proform') }}">add Product</a>
-     </div>
-	</div>
- <h1>product:{{$product}}</h1>
- <h1>order:{{$order}}</h1>
- <h1>User:{{$User}}</h1>
- <h1>admin:{{$admin}}</h1>
-</body>
-</html>
+        <br><br><br>
+        <img src="https://cavinkare.com/img/2017/03/logo.png" >
+    </div>
+</div>
+<div class="container">
+    <div class="card">
+      <h1>Product</h1>
+      <p>{{$product}}</p>
+    </div>
+    <div class="card">
+        <h1>Order</h1>
+        <p>{{$order}}</p>
+      </div>
+
+      <div class="card">
+        <h1>User</h1>
+        <p>{{$User}}</p>
+      </div>
+
+      <div class="card">
+        <h1>Admin</h1>
+        <p>{{$admin}}</p>
+      </div>
+
+
+    </body>
+    </html>
