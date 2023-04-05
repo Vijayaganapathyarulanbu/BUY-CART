@@ -129,7 +129,7 @@ body{
             <label for="price">Price</label>
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">$</span>
+                    <span class="input-group-text">₹</span>
                 </div>
                 <input type="text" class="form-control" id="price" name="price" pattern="[0-9]+" title="Please enter only numbers" required>
             </div>
